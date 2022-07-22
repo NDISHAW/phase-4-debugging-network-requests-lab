@@ -20,7 +20,6 @@ class ToysController < ApplicationController
   def destroy
     toy = Toy.find_by(id: params[:id])
     toy.destroy
-    
     head :no_content
   end
 
